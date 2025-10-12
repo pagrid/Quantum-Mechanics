@@ -1,1 +1,38 @@
+import matplotlib.pyplot as plt
+import numpy as np
+from scipy.special import assoc_laguerre, factorial
 
+# Constants
+a0 = 1  # Bohr radius (arbitrary units)
+#
+# Radial wavefunction for hydrogen atom
+def radial_wavefunction(r, n, l):
+    rho = 2 * r / (n * a0)
+    normalization = np.sqrt((2 / (n * a0))**3 * factorial(n - l - 1) / (2 * n * factorial(n + l)))
+    radial_part = np.exp(-rho / 2) * rho**l * assoc_laguerre(rho, n - l - 1, 2 * l + 1)
+    return normalization * radial_part
+
+# Radial probability density
+def radial_probability_density(r, n, l):
+    R_nl = radial_wavefunction(r, n, l)
+    return r**2 * np.abs(R_nl)**2
+
+# Radial positions
+r = np.linspace(0, 20, 500)
+
+# Quantum states
+states = [(1, 0), (2, 0), (2, 1), (3, 0), (3, 1), (3, 2)]
+
+# Plotting
+plt.figure(figsize=(10, 6))
+for n, l in states:
+    prob_density = radial_probability_density(r, n, l)
+    prob_density /= prob_density.max()  # Normalize for better visualization
+    plt.plot(r, prob_density, label=f"$n={n}, l={l}$")
+
+plt.title("Radial Probability Density for Hydrogen Atom")
+plt.xlabel("Radial Distance (Bohr Radii)")
+plt.ylabel("Normalized Probability Density")
+plt.legend()
+plt.grid()
+plt.show()
