@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """time-dependent_perturbations.ipynb
 
-Time-Dependent Perturbations for the Quantum Harmonic Oscillator
+Time-Dependent Perturbations in the Quantum Harmonic Oscillator
 ----------------------------------------------------------------
 Author: Petros Agridos
 
