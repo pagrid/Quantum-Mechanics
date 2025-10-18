@@ -2,7 +2,7 @@
 
 A **computational visualization of the quantum harmonic oscillator (QHO)** — one of the most fundamental systems in quantum mechanics.
 
-This project illustrates how **quantized energy levels** emerge from the Schrödinger equation and how the **probability densities** evolve for each quantum state.
+This project illustrates how **quantized energy levels** emerge from the Schrödinger equation and how the **probability densities** and **eigenfunctions** behave for each quantum state.
 
 ---
 
@@ -12,38 +12,55 @@ This project illustrates how **quantized energy levels** emerge from the Schröd
 - 💡 **Energy eigenvalues:** $E_n = \left(n + \frac{1}{2}\right) \hbar \omega$  
 - 🌐 **Hermite–Gaussian wavefunctions:** $\psi_n(x) = N_n H_n(x) e^{-x^2/2}$  
 - 📊 **Probability densities:** $|\psi_n(x)|^2$ for visualizing quantum states  
-- 🎨 **High-quality plots:** Combined visualization of potential, energy levels, and probability densities
+- 🎨 **High-quality plots:** Combined visualization of potential, energy levels, and probability densities  
+- 🧩 **Eigenfunctions visualization:** Normalized $\psi_n(x)$ for $n = 0, 1, 2, 3, 4$  
 
 ---
 
 ## 🧠 Background
 
-The quantum harmonic oscillator is a cornerstone of quantum mechanics, modeling vibrations, phonons, and many other systems. Its properties are determined by the **time-independent Schrödinger equation**:
+The quantum harmonic oscillator is a cornerstone of quantum mechanics, modeling vibrations, phonons, and many other systems.  
+Its properties are determined by the **time-independent Schrödinger equation**:
 
-$\hat{H} \psi_n(x) = E_n \psi_n(x), \quad \hat{H} = -\frac{\hbar^2}{2 m} \frac{d^2}{dx^2} + \frac{1}{2} m \omega^2 x^2$
+$$
+\hat{H} \psi_n(x) = E_n \psi_n(x), \quad 
+\hat{H} = -\frac{\hbar^2}{2 m} \frac{d^2}{dx^2} + \frac{1}{2} m \omega^2 x^2
+$$
 
 The **normalized wavefunctions** are given by Hermite polynomials:
 
-$\psi_n(x) = N_n H_n(x) e^{-x^2/2}, \quad N_n = \frac{1}{\sqrt{2^n n! \sqrt{\pi}}}$
+$$
+\psi_n(x) = N_n H_n(x) e^{-x^2/2}, \quad 
+N_n = \frac{1}{\sqrt{2^n n! \sqrt{\pi}}}
+$$
 
 with corresponding **energy levels**:
 
-$E_n = \left(n + \frac{1}{2}\right) \hbar \omega, \quad n = 0,1,2,\dots$
+$$
+E_n = \left(n + \frac{1}{2}\right) \hbar \omega, \quad n = 0,1,2,\dots
+$$
 
-These wavefunctions illustrate **quantization**: the system can only occupy discrete energy levels, with probability densities describing where the particle is likely to be found.
+These wavefunctions illustrate **quantization** — the system can only occupy discrete energy levels,  
+with probability densities describing where the particle is most likely to be found.
 
 ---
 
 ## 📊 Example Outputs
 
 ### 🔹 Potential and Probability Densities
-![Quantum Harmonic Oscillator](QHO.png)
+![Quantum Harmonic Oscillator - Energy and Density](QHO.png)
 
 The plot shows the potential curve $V(x)$, the energy levels $E_n$, and the corresponding probability densities $|\psi_n(x)|^2$ for several quantum states.
+
+### 🔹 Normalized Eigenfunctions
+![Quantum Harmonic Oscillator - Eigenfunctions](wavefunctions.png)
+
+The plot displays the normalized Hermite–Gaussian eigenfunctions $\psi_n(x)$ for $n = 0, 1, 2, 3, 4$, showing their alternating parity and increasing number of nodes.
 
 ---
 
 ## 📝 License
 This project is released under the [MIT License](LICENSE).
+
 
 
