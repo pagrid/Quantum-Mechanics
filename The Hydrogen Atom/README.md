@@ -61,5 +61,7 @@ $E_n = - \frac{13.6 \text{ eV}}{n^2}, \quad n=1,2,3,\dots$
 
 ---
 
+## 📝 License
+This project is released under the [MIT License](LICENSE).
 
 
