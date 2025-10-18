@@ -61,18 +61,5 @@ $E_n = - \frac{13.6 \text{ eV}}{n^2}, \quad n=1,2,3,\dots$
 
 ---
 
-## 🧰 Technologies Used
 
-| Category | Libraries |
-|-----------|------------|
-| **Core** | `Python`, `NumPy`, `SciPy`, `Matplotlib` |
-| **Development** | `Jupyter Notebook` |
-
----
-
-## 🚀 Installation
-
-1. Clone the repository:  
-```bash
-git clone https://github.com/pagrid/Classical-Physics.git
 
