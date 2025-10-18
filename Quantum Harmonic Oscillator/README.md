@@ -43,22 +43,7 @@ The plot shows the potential curve $V(x)$, the energy levels $E_n$, and the corr
 
 ---
 
-## 🧰 Technologies Used
+## 📝 License
+This project is released under the [MIT License](LICENSE).
 
-| Category | Libraries |
-|-----------|------------|
-| **Core** | `Python`, `NumPy`, `Matplotlib`, `SciPy` |
-| **Development** | `Jupyter Notebook` |
-
----
-
-## 🚀 Installation
-
-1. Clone the repository:  
-
-git clone https://github.com/pagrid/Classical-Physics.git
-
-📝 License
-
-This project is released under the MIT License
 
